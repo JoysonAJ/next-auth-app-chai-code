@@ -1,3 +1,20 @@
 {
-  "extends": ["next/core-web-vitals","next", "prettier"]
+   "extends": [
+      "next/core-web-vitals",
+      "next/core-web-vitals",
+      "next",
+      "eslint:recommended",
+      "plugin:tailwindcss/recommended",
+      // Ensure "prettier" is last
+      "prettier"
+   ],
+   "overrides": [
+      {
+         "files": ["*.ts", "*.tsx", "*.js"],
+         "parser": "@typescript-eslint/parser"
+      }
+   ],
+   "rules": {
+      "indent": "off"
+   }
 }
